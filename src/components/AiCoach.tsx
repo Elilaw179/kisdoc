@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -44,10 +44,13 @@ const formSchema = z.object({
   }),
 });
 
+const COOLDOWN_SECONDS = 10;
+
 export function AiCoach() {
   const [recommendation, setRecommendation] =
     useState<PersonalizedFoodRecommendationsOutput | null>(null);
   const [isPending, setIsPending] = useState(false);
+  const [cooldown, setCooldown] = useState(0);
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -59,24 +62,36 @@ export function AiCoach() {
     },
   });
 
+  useEffect(() => {
+    let timer: NodeJS.Timeout;
+    if (cooldown > 0) {
+      timer = setInterval(() => {
+        setCooldown((prev) => prev - 1);
+      }, 1000);
+    }
+    return () => clearInterval(timer);
+  }, [cooldown]);
+
   async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsPending(true);
     setRecommendation(null);
     try {
       const result = await getPersonalizedFoodRecommendations(values);
       setRecommendation(result);
-    } catch (error) {
+      setCooldown(COOLDOWN_SECONDS);
+    } catch (error: any) {
       console.error("AI recommendation error:", error);
       toast({
         variant: "destructive",
         title: "Oh no! Something went wrong.",
-        description:
-          "There was a problem with the AI. Please try again later.",
+        description: error.message || "There was a problem with the AI. Please try again later.",
       });
     } finally {
       setIsPending(false);
     }
   }
+
+  const isButtonDisabled = isPending || cooldown > 0;
 
   return (
     <section id="ai-coach" className="mb-12 md:mb-16">
@@ -152,12 +167,14 @@ export function AiCoach() {
                   )}
                 />
               </div>
-              <Button type="submit" disabled={isPending} size="lg">
+              <Button type="submit" disabled={isButtonDisabled} size="lg">
                 {isPending ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     Generating Advice...
                   </>
+                ) : cooldown > 0 ? (
+                  `Try again in ${cooldown}s`
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-4 w-4" />
