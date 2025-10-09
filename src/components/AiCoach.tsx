@@ -30,6 +30,7 @@ import {
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { Separator } from "./ui/separator";
+import { Skeleton } from "./ui/skeleton";
 
 const formSchema = z.object({
   dietaryNeeds: z.string().min(10, {
