@@ -35,6 +35,12 @@
       "description": "A collection of dairy products and plant-based alternatives.",
       "imageUrl": "https://picsum.photos/seed/dairy-alternatives/600/400",
       "imageHint": "milk yogurt"
+    },
+    {
+      "id": "student-project-hero",
+      "description": "A group of students working together on their project.",
+      "imageUrl": "https://picsum.photos/seed/students-project/1200/600",
+      "imageHint": "students coding"
     }
   ]
 }
