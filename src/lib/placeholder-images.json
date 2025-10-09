@@ -1,3 +1,40 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "leafy-greens",
+      "description": "A vibrant assortment of leafy green vegetables.",
+      "imageUrl": "https://picsum.photos/seed/leafy-greens/600/400",
+      "imageHint": "leafy greens"
+    },
+    {
+      "id": "fruits",
+      "description": "A colorful mix of fresh fruits.",
+      "imageUrl": "https://picsum.photos/seed/fruits/600/400",
+      "imageHint": "mixed fruits"
+    },
+    {
+      "id": "whole-grains",
+      "description": "A variety of whole grain products, including bread and pasta.",
+      "imageUrl": "https://picsum.photos/seed/whole-grains/600/400",
+      "imageHint": "whole grains"
+    },
+    {
+      "id": "lean-proteins",
+      "description": "Grilled chicken breast, a prime example of lean protein.",
+      "imageUrl": "https://picsum.photos/seed/lean-proteins/600/400",
+      "imageHint": "grilled chicken"
+    },
+    {
+      "id": "healthy-fats",
+      "description": "Avocados and nuts, sources of healthy fats.",
+      "imageUrl": "https://picsum.photos/seed/healthy-fats/600/400",
+      "imageHint": "avocado nuts"
+    },
+    {
+      "id": "dairy-alternatives",
+      "description": "A collection of dairy products and plant-based alternatives.",
+      "imageUrl": "https://picsum.photos/seed/dairy-alternatives/600/400",
+      "imageHint": "milk yogurt"
+    }
+  ]
 }
