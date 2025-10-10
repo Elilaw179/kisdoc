@@ -20,7 +20,7 @@ export function Hero() {
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
       <div className="relative h-full flex flex-col items-center justify-center text-center text-white p-4">
-        <h2 className="text-4xl md:text-5xl font-bold font-headline drop-shadow-lg">A Student Project Showcase</h2>
+        <h2 className="text-4xl md:text-5xl font-bold font-headline drop-shadow-lg">Year Ten Students' Project </h2>
         <p className="mt-4 max-w-2xl text-lg drop-shadow">This NutriGuide AI app was built by talented students.</p>
         <Button variant="secondary" className="mt-6" onClick={() => document.getElementById('ai-coach')?.scrollIntoView({ behavior: 'smooth' })}>
           Get Started

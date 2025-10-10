@@ -6,7 +6,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex items-center gap-2">
         <Leaf className="text-primary h-7 w-7" />
         <h1 className="text-2xl font-bold font-headline tracking-tight">
-          NutriGuide AI
+          KISdoc AI
         </h1>
       </div>
     </header>

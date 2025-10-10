@@ -39,7 +39,7 @@
     {
       "id": "student-project-hero",
       "description": "A group of students working together on their project.",
-      "imageUrl": "https://picsum.photos/seed/students-project/1200/600",
+      "imageUrl": "/student.jpeg",
       "imageHint": "students coding"
     }
   ]
