@@ -3,37 +3,37 @@
     {
       "id": "leafy-greens",
       "description": "A vibrant assortment of leafy green vegetables.",
-      "imageUrl": "https://picsum.photos/seed/leafy-greens/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNhbGFkfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
       "imageHint": "leafy greens"
     },
     {
       "id": "fruits",
       "description": "A colorful mix of fresh fruits.",
-      "imageUrl": "https://picsum.photos/seed/fruits/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1743760000723-a0ab55671dbe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QSUyMGNvbG9yZnVsJTIwbWl4JTIwb2YlMjBmcmVzaCUyMGZydWl0cy58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
       "imageHint": "mixed fruits"
     },
     {
       "id": "whole-grains",
       "description": "A variety of whole grain products, including bread and pasta.",
-      "imageUrl": "https://picsum.photos/seed/whole-grains/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1709236550338-e2bcc3beee70?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2hvbGUlMjBncmFpbnN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
       "imageHint": "whole grains"
     },
     {
       "id": "lean-proteins",
       "description": "Grilled chicken breast, a prime example of lean protein.",
-      "imageUrl": "https://picsum.photos/seed/lean-proteins/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1577194509876-4bb24787a641?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8R3JpbGxlZCUyMGNoaWNrZW4lMjBicmVhc3QlMkMlMjBhJTIwcHJpbWUlMjBleGFtcGxlJTIwb2YlMjBsZWFuJTIwcHJvdGVpbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=500",
       "imageHint": "grilled chicken"
     },
     {
       "id": "healthy-fats",
       "description": "Avocados and nuts, sources of healthy fats.",
-      "imageUrl": "https://picsum.photos/seed/healthy-fats/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1626524818721-872c6e7f3c8e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fEF2b2NhZG9zJTIwYW5kJTIwbnV0cyUyQyUyMHNvdXJjZXMlMjBvZiUyMGhlYWx0aHklMjBmYXRzfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=500",
       "imageHint": "avocado nuts"
     },
     {
       "id": "dairy-alternatives",
       "description": "A collection of dairy products and plant-based alternatives.",
-      "imageUrl": "https://picsum.photos/seed/dairy-alternatives/600/400",
+      "imageUrl": "https://images.unsplash.com/photo-1506617420156-8e4536971650?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGFpcnl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=500",
       "imageHint": "milk yogurt"
     },
     {
